@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Catalyst</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Career Catalyst</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#roadmap">Career Path</a></li>
+                <li><a href="#articles">Articles</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <img class="hero-image" src="career_path.jpg" alt="Career Path">
+        <div class="hero-overlay">
+            <h1 class="typewriter">Welcome to Career Catalyst</h1>
+            <p>Your Roadmap to Success</p>
+            <button class="btn-primary">Try Now</button>
+        </div>
+    </section>
+
+    <!-- Career Path Generator Section -->
+    <section id="roadmap" class="roadmap-section">
+        <div class="roadmap-overlay">
+            <div class="image-container" onmouseover="zoomImageIn(this)" onmouseout="zoomImageOut(this)">
+                <img src="l.jpg" alt="Left Side Image" class="zoomable-image">
+            </div>
+            <h1 class="typewriter">Come, <span class="dynamic-color">Let's<br></span> <span class="dynamic-color">Learn and Grow Together<br></span></h1>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" class="articles-section">
+        <h2>Latest Articles</h2>
+        <div class="articles-container">
+            <div class="article-box">
+                <img src="ai.jpg" alt="AI Jobs">
+                <h3>Top AI Jobs in 2025</h3>
+                <a href="ai_article.html" class="read-more">Read More</a>
+            </div>
+            <div class="article-box">
+                <img src="h.jpg" alt="Healthcare">
+                <h3>Advancements in Healthcare</h3>
+                <a href="healthcare_article.html" class="read-more">Read More</a>
+            </div>
+            <div class="article-box">
+                <img src="web.jpg" alt="Web Development">
+                <h3>Web Development Trends</h3>
+                <a href="web_dev_article.html" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Made with ❤️ by Kamalasree</p>
+    </footer>
+
+    <script>
+        // Zoom functionality
+        function zoomImageIn(element) {
+            element.querySelector('img').classList.add('zoomed');
+        }
+
+        function zoomImageOut(element) {
+            element.querySelector('img').classList.remove('zoomed');
+        }
+    </script>
+</body>
+</html>
+
